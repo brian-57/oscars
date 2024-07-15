@@ -1,0 +1,205 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "Helvetica neue" ;
+background-color : lightblue; }
+code {
+    font-family : "Courier New" ;}
+.App{
+    background-color:#fff;
+    max-width:992px;
+    margin : auto ; }
+
+nav {display:flex;
+justify-content:space-between;
+border-bottom:1px solid grey;
+background-color:orange;
+padding: 10px 20px; }
+
+.nav-menu li {
+    display:inline-block;
+    list-style:none;}
+.nav-menu_link {
+        display:inline-block;
+        margin:5px;
+        border:1px solid grey;
+        text-decoration:none;
+        border-radius :5px;
+        padding:3px 8px;
+        background-color :#fff;
+    }
+.nav-menu_link :hover{
+        border:1px solid black;
+        background-color :rgb (228,228,228);
+        transition :all 0.35 ease-in-out ;
+        cursor:pointer;
+    }
+    .logo-link {
+        color:#fff;
+        text-decoration: none;
+    }
+    .main-content {
+        width:90%;
+        margin:auto;
+        padding-bottom :300px;
+    }
+    .main-content  h2{
+        text-align : center;
+        margin-bottom :20px;
+    }
+    .home-image
+    {
+        width :100%;
+        height :500px;
+        background-image: url('/george-bush.png');
+        background-size: cover;
+        margin-bottom: 50px;
+        transition: all 0.3s ease-in-out; }
+        .home-image:hover {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Martin_Cooper%2C_Two_Antennas%2C_October_2010.jpg/300px-Martin_Cooper%2C_Two_Antennas%2C_October_2010.jpg");
+            cursor :pointer;
+            transform:scale (1.05);
+            transition :all 0.3s ease-in-out ;
+        }
+            
+    .thumbnail-container{
+        display :flex;
+        justify-content :space-around;
+        margin-bottom:50px;
+        width: 100%; }
+
+    .home-thumbnail-1,
+    .home-thumbnail-2,
+    .home-thumbnail-3
+     {
+        background-size: cover;
+        width :200px;
+        height:200px;
+    transition: all 0.3s ease-in-out; }
+    
+        .home-thumbnail-1 { background-image :url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Diana%2C_Princess_of_Wales_1997_%282%29.jpg/330px-Diana%2C_Princess_of_Wales_1997_%282%29.jpg")}
+        .home-thumbnail-2 { background-image :url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/George-W-Bush.jpeg/330px-George-W-Bush.jpeg")}
+        .home-thumbnail-3 { background-image :url("https://cdn.britannica.com/94/144794-050-F2600575/Michael-Faraday.jpg?w=300")}
+       
+        .home-thumbnail-1:hover,
+        .home-thumbnail-2:hover,
+        .home-thumbnail-3:hover {
+            transform:scale (1.05);
+            cursor:pointer;
+            transition :all 0.3s ease-in-out ; 
+
+        }
+        .container{
+            text-align: center;
+            max-width: 800px;
+        }
+        .container h1{
+            font-size: 40px;
+            font-weight: 600;
+            color: chocolate;
+
+        }
+        .container p{
+            max-width: 700px;
+            margin: 10px auto 20px;
+            line-height: 1.4;
+            font-size: 20px;
+            text-align: center;
+        }
+        .actors{
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url(/oscar1.png);
+            background-size:cover ;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .h2{
+            font-size: 40px;
+            font-weight: 500;
+            align-items: center;
+            color: chocolate;
+            text-align: center;
+        }
+        .container ul{
+            list-style: disc;
+            margin: 0;
+            padding-left:0;
+        }
+        .container ul li{
+            font-size: 20px;
+            align-items: center;
+            margin: auto;
+        }
+
+        .testimonials{
+            margin: 80px auto; 
+            padding: 0 80px;
+            position: relative;
+         }
+         .nax-btn,.back-btn{
+             position:absolute;
+             top: 50%;
+             right: 0;
+             transform: translateY(-50px);
+             padding:15px;
+             width: 50px;
+             border-radius: 50%;
+             cursor: pointer;
+             background: #212EA0;
+         }
+         .back-btn{
+             right: auto;
+             left: 0;
+         }
+         .slider{
+             overflow: hidden;
+         
+         }
+         .slider ul{
+             display: flex;
+             width: 200%;
+             overflow-x: hidden;
+             transition: 0.5s;
+             
+         }
+         .slider ul li{
+             list-style: none;
+             width: 50%;
+             padding: 20px;
+         }
+         .slide{
+             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+             padding :40px;
+             border-radius: 10px;
+             color: #676767;
+             line-height: 1.4;
+         }
+         .slide img{
+             width: 65px;
+             border-radius: 50px;
+             margin-right: 10px;
+             border: 4px solid #212EA0;
+         }
+         .user-info{
+             display:flex;
+             align-items: center;
+             margin-bottom: 20px;
+             font-size: 15px;
+         }
+         .user-info h3{
+             color: #212EA0;
+         }
+         .p{
+            max-width: 700px;
+            margin: 10px auto 20px;
+            line-height: 1.4;
+            font-size: 20px;
+            color: antiquewhite;
+         }
+         
+        
